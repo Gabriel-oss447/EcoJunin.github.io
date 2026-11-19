@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi inicio | EcoJunín</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+</head>
+<body data-pag="u">
+  <header>
+    <nav id="nav"></nav>
+  </header>
+  <div class="saludo">
+    <h2>¡Hola, <span id="nombre-usuario"></span>! 👋</h2>
+    <p>Te damos la bienvenida a EcoJunín. Ya puedes desarrollar el quiz y ver el ranking de puntajes.</p>
+  </div>
+  <div class="contenedor">
+    <main>
+      <section>
+        <article class="hero">
+          <h1>Cuidar Chilca, Huancayo y todo Junín empieza por informarnos</h1>
+          <p>EcoJunín es una aplicación educativa y de reporte ambiental: aprendes sobre la gestión de residuos, pones a prueba lo aprendido y avisas dónde hay contaminación para que la municipalidad la atienda.</p>
+          <ul class="datos">
+            <li><strong id="temp">--</strong><small id="clima">Temperatura actual en Huancayo</small></li>
+            <li><strong>271 mil t</strong><small>de residuos municipales al año en Junín (2020)</small></li>
+            <li><strong>12,5 %</strong><small>dispuesto de forma adecuada</small></li>
+            <li><strong>ODS 13</strong><small>Acción por el Clima</small></li>
+          </ul>
+        </article>
+
+        <article>
+          <h1>¿Qué pasa con los residuos en Junín?</h1>
+          <p>En Huancayo y Chilca persiste una débil cultura ciudadana en la gestión de residuos sólidos, y esa brecha favorece botaderos informales y basura en las vías públicas. Los residuos también llegan a los ríos: el OEFA denunció la mala disposición en los botaderos «El Edén» y «Agua de las Vírgenes», a orillas del río Mantaro, y la ANA identificó botaderos y vertimientos como fuentes de contaminación en esa cuenca.</p>
+          <h3 style="margin:14px 0 6px">Datos para tener en cuenta</h3>
+          <ul class="curiosos">
+            <li>El OEFA recomendó desde 2011 construir una planta de tratamiento de residuos en Huancayo.</li>
+            <li>El botadero El Porvenir, en El Tambo, tendría una capacidad remanente de unos dos meses.</li>
+            <li>Reducir, reutilizar y reciclar (las 3R) disminuye lo que termina en un botadero.</li>
+            <li>Los restos de frutas y verduras pueden convertirse en abono mediante compostaje.</li>
+            <li>Quemar basura libera humo y gases que dañan el aire y la salud.</li>
+          </ul>
+        </article>
+
+        <article id="reportes">
+          <h1>Reportes ciudadanos de contaminación</h1>
+          <p>Zonas de Junín reportadas por la comunidad. Solo se muestra el nombre de pila.</p>
+          <div id="lista-reportes" class="reportes" style="margin-top:14px"></div>
+        </article>
+      
+      </section>
+    </main>
+    <aside>
+      <article>
+        <h1>Naturaleza de Junín</h1>
+        <div id="galeria"></div>
+      </article>
+      <article>
+        <h1>Participa</h1>
+        <p>Avisa dónde hay contaminación o pon a prueba lo que aprendiste.</p>
+        <div class="acciones">
+          <a href="reportar.html"><button type="button">Reportar contaminación</button></a>
+          <a href="quiz.html"><button type="button" class="claro">Desarrollar quiz</button></a>
+          <a href="quiz.html#ranking"><button type="button" class="claro">Ver ranking de puntajes</button></a>
+        </div>
+      </article>
+    </aside>
+  </div>
+  <footer><b>EcoJunín</b> · Aplicación educativa y de reporte ambiental · Región Junín, Perú · Análisis y Diseño de Software 2026</footer>
+  <script src="js/datos.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

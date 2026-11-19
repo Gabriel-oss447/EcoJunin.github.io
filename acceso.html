@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usuario | EcoJunín</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+</head>
+<body data-pag="c">
+  <header><nav id="nav"></nav></header>
+  <div class="contenedor">
+    <main>
+      <section>
+        <article style="max-width:560px">
+          <h1>Acceso de usuarios</h1>
+          <p>Con tu cuenta podrás desarrollar el quiz y aparecer en el ranking de puntajes.</p>
+          <div class="tabs">
+            <button type="button" class="claro activo" id="t-login">Ya tengo cuenta</button>
+            <button type="button" class="claro" id="t-registro">Crear cuenta</button>
+          </div>
+          <form id="form-login">
+            <label for="l-correo">Correo</label><input type="email" id="l-correo" autocomplete="email" required />
+            <label for="l-clave">Contraseña</label><input type="password" id="l-clave" autocomplete="current-password" required />
+            <p id="err-login" class="error" hidden>Correo o contraseña incorrectos. Si aún no tienes cuenta, créala.</p>
+            <button type="submit">Ingresar</button>
+          </form>
+          <form id="form-registro" hidden>
+            <label for="r-nombre">Nombre</label><input id="r-nombre" autocomplete="name" maxlength="60" required />
+            <label for="r-correo">Correo</label><input type="email" id="r-correo" autocomplete="email" required />
+            <label for="r-clave">Contraseña (mínimo 6 caracteres)</label><input type="password" id="r-clave" minlength="6" autocomplete="new-password" required />
+            <p id="err-registro" class="error" hidden></p>
+            <button type="submit">Crear cuenta e ingresar</button>
+          </form>
+        </article>
+      </section>
+    </main>
+    <aside>
+      <article><h1>Naturaleza de Junín</h1><div id="galeria"></div></article>
+    </aside>
+  </div>
+  <footer><b>EcoJunín</b> · Aplicación educativa y de reporte ambiental · Región Junín, Perú</footer>
+  <script src="js/datos.js"></script>
+  <script src="js/acceso.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reporte enviado | EcoJunín</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+</head>
+<body data-pag="r">
+  <header><nav id="nav"></nav></header>
+  <div class="contenedor">
+    <main>
+      <section>
+        <article class="exito">
+          <h2 style="color:var(--hoja)">EcoJunín</h2>
+          <small class="etq">REPORTE CIUDADANO</small>
+          <div class="check"><span>
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#2f7d3b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+          </span></div>
+          <h1>¡Reporte enviado con éxito!</h1>
+          <p>Gracias por actuar por el planeta. Tu participación hace la diferencia.</p>
+          <p id="detalle-envio" class="estado pendiente" style="margin-top:12px" hidden></p>
+          <div class="sig">
+            <h3>¿Qué sigue ahora?</h3>
+            <p>La información de tu reporte ayudará a identificar problemas en tu comunidad. Quedó <b>pendiente</b> hasta que el administrador lo marque como solucionado.</p>
+          </div>
+          <a class="btn-grande" id="volver" href="index.html">Volver al inicio</a>
+          <a class="otro" href="reportar.html">Crear otro reporte</a>
+        </article>
+      </section>
+    </main>
+    <aside>
+      <article><h1>Naturaleza de Junín</h1><div id="galeria"></div></article>
+    </aside>
+  </div>
+  <footer><b>EcoJunín</b> · Aplicación educativa y de reporte ambiental · Región Junín, Perú</footer>
+  <script src="js/datos.js"></script>
+  <script src="js/reporte-enviado.js"></script>
+</body>
+</html>
